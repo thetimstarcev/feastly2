@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>My Order</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,400;1,500&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+
+      <body>
+      <div class="parent">
+
+        <div class="container_header">
+            <div class="btn_back"><img src="images/btn_back_arrow_default.svg" alt="Button - Back" onclick="history.back()"></div>
+            <div class="header_logo" onclick="location.href='home.html';"><img src="images/btn_feastly_logo.png" alt="Button - Home"></div>
+            <div class="btn_bell"><img src="images/btn_bell_orange.svg" alt="Button - Alert Server"/></div>
+        </div>
+
+        <div id="container_subheader_title" class="col_10">
+            <h1>My Order</h1>
+            <div id="container_logo_tgd_circle">
+                <img src="images/img_logo_thegreydog_circle.png" alt="The Grey Dog logo and typeface"/><h2>The Grey Dog</h2><h4>Table #12</h4>
+            </div>
+        </div>
+
+        <div class="container_myorder_receipt">
+            <div class="myorder_title"><h4>Order:</h4></div>
+            <div class="myorder_item">
+                <h5>Grey Dog's Breakfast</h5>
+            </div>
+            <div class="myorder_price">
+                <p class="font_body">$18.50</p>
+            </div>
+            <div class="myorder_list">
+                <p class="font_body">scrambled eggs<br>french toast<br>sausage</p>
+            </div>
+            <div class="myorder_btn">
+                <button><img src="images/btn_myorder.svg"></button>
+            </div>
+          </div>
+          
+        <div class="col_10">
+            <hr class="divider_horizontal">
+        </div>
+
+        <div class="container_myorder_subtotal">
+            <div class="myorder_subtotal_title">
+                <h6>Subtotal</h6>
+            </div>
+            <div class="myorder_subtotal_price">
+                <h6>$18.50</h6>
+            </div>
+            <div class="myorder_subtotal_addons">
+                <h4 class="align_left">Popular add ons</h4>
+            </div>
+        </div>
+
+        <div class="card_xl">
+            <div class="card_xl_title"><h5>Village Pancakes</h5></div>
+            <div class="card_xl_price">$18.50</div>
+            <div class="card_xl_description">With vermont maple syrup & butter<br>Add blueberries, strawberries, bananas, or chocolate chips<br>*Gluten free option</div>
+        </div>
+        <div class="card_xl">
+            <div class="card_xl_title"><h5>French Toast</h5></div>
+            <div class="card_xl_price">$18.00</div>
+            <div class="card_xl_description">With raspberry orange syrup, maple butter, fresh mint & berries</div>
+        </div>
+
+        <div class="col_10">
+            <button class="btn_xxl" onclick="location.href='order_summary.html';">Checkout</button>
+        </div>
+
+     <!-- Footer Nav -->
+
+     <div class="container_footer">
+        <div id="btn_footer_home">
+        <button class="btn_footer_nav" onclick="location.href='home.html';"><img src="images/icon_nav_home_default.svg" alt="Navigation Button - Home"><p>Home</p></button>
+        </div>
+        <div id="btn_footer_qrscan">
+        <button class="btn_footer_nav" onclick="location.href='qrscan.html';"><img src="images/icon_nav_qrcode_default.svg" alt="Navigation Button - QR Scan"><p>QR Scan</p></button>
+        </div>
+        <div id="btn_footer_myorder">
+        <button class="btn_footer_nav"><img src="images/icon_nav_myorder_active.svg" alt="Navigation Button - My Order"><p class="primary bold">My Order</p></button>
+        </div>
+        <div id="btn_footer_profile">
+        <button class="btn_footer_nav" onclick="location.href='profile.html';"><img src="images/icon_nav_profile_default.svg" alt="Navigation Button - User Profile"><p>Profile</p></button>
+        </div>
+    </div> <!-- End of Footer -->
+
+</div> <!-- End of Parent -->
+</body>
+</html>

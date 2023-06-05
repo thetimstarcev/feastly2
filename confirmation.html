@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Confirmation</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,400;1,500&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+
+      <body>
+      <div class="parent">
+
+        <div class="container_header">
+            <div class="btn_back hide"><img src="images/btn_back_arrow_default.svg" alt="Button - Back" onclick="history.back()"></div>
+            <div class="header_logo" onclick="location.href='home.html';"><img src="images/btn_feastly_logo.png" alt="Button - Home"></div>
+            <div class="btn_bell"><img src="images/btn_bell_orange.svg" alt="Button - Alert Server"/></div>
+        </div>
+
+        <div id="container_subheader_title" class="col_10">
+            <h1>Confirmation</h1>
+            <h4>Thank you for ordering!<br>Your food will be right out.</h4>
+        </div>
+
+        <div id="container_logo_tgd_circle" class="col_10">
+            <img src="images/img_logo_thegreydog_circle.png" alt="The Grey Dog logo and typeface"/><h2>The Grey Dog</h2><h4>Table #12</h4>
+        </div>
+
+        <div id="container_confirmation" class="col_10_left">
+            <h4>Order:</h4>
+            <div class="container_confirmation_item">
+            <div class="myorder_item">
+                <p class="font_body">Grey Dog's Breakfast</p>
+            </div>
+            <div class="myorder_price">
+                <p class="font_body">$18.50</p>
+            </div>
+            </div>
+        </div>
+
+        <div class="col_10">
+            <hr class="divider_horizontal">
+        </div>
+
+        <div class="container_total">
+            <div class="total_title">
+                <h6>Total</h6>
+            </div>
+            <div class="total_amount">
+                <h6>$25.32</h6>
+            </div>
+        </div>
+
+        <div class="col_10">
+            <div class="card_xxl"><h2>Need Help?</h2><p class="font_body">Feel free to use the icon on the top right of the screen to get your server's attention</p></div>
+            <button class="btn_xxl" onclick="location.href='menu.html';">Order more</button>
+        </div>
+
+    <!-- Footer Nav -->
+
+    <div class="container_footer">
+        <div id="btn_footer_home">
+        <button class="btn_footer_nav" onclick="location.href='home.html';"><img src="images/icon_nav_home_default.svg" alt="Navigation Button - Home"><p>Home</p></button>
+        </div>
+        <div id="btn_footer_qrscan">
+        <button class="btn_footer_nav" onclick="location.href='qrscan_instructions.html';"><img src="images/icon_nav_qrcode_default.svg" alt="Navigation Button - QR Scan"><p>QR Scan</p></button>
+        </div>
+        <div id="btn_footer_myorder">
+        <button class="btn_footer_nav"><img src="images/icon_nav_myorder_active.svg" alt="Navigation Button - My Order"><p class="primary bold">My Order</p></button>
+        </div>
+        <div id="btn_footer_profile">
+        <button class="btn_footer_nav" onclick="location.href='profile.html';"><img src="images/icon_nav_profile_default.svg" alt="Navigation Button - User Profile"><p>Profile</p></button>
+        </div>
+    </div> <!-- End of Footer -->
+
+</div> <!-- End of Parent -->
+
+</body>
+</html>

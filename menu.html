@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Menu</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,400;1,500&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="script.js"></script> 
+    </head>
+
+    <body>
+      <div class="parent">
+
+        <div class="container_header">
+            <div class="btn_back hide"><img src="images/btn_back_arrow_default.svg" alt="Button - Back" onclick="history.back()"></div>
+            <div class="header_logo" onclick="location.href='home.html';"><img src="images/btn_feastly_logo.png" alt="Button - Home"></div>
+            <div class="btn_bell"><img src="images/btn_bell_orange.svg" alt="Button - Alert Server"/></div>
+        </div>
+
+        <div id="container_subheader_splash" class="col_10">
+            <img class="subheader_splash_image" src="images/photo_splash_thegreydog.png" alt="Photo of Grey Dog Restaurant"/>
+            <div id="container_splash_logo_tgd_circle">
+                <img src="images/img_logo_thegreydog_circle.png" alt="The Grey Dog logo and typeface"/><br><span class="font_body">The Grey Dog</span>
+            </div>
+            <div id="container_table_number" class="col_10">
+            <span class="font_body">Table 12</span>
+            </div>
+        </div>
+
+        <!-- Search Bar -->
+
+        <div class="col_10">
+        <div class="container_searchbar">
+            <input type="text" id="fsearch" name="fsearch" placeholder="Search">
+        </div>
+        </div>
+
+        <!-- Tabbed Nav -->
+
+        <div id="container_tabbed_nav" class="col_10">
+            <!-- <button class="tab_lg tab_lg_selected" onclick="openCategory('Breakfast')"><span>Breakfast</span><br></button> -->
+            <button class="tab_lg tab_lg_selected" onclick="openCategory('Breakfast')"><span>Breakfast</span><br></button>
+            <button class="tab_lg" onclick="openCategory('Shares')">Shares<br></button>
+            <button class="tab_lg" onclick="openCategory('LunchAndDinner')">Lunch & Dinner</button>
+            <button class="tab_lg" onclick="openCategory('Beverages')">Beverages</button>
+        </div>
+
+        <!-- Container - Menu -->
+
+        <div id="container_menu" class="col_10">
+
+        <!-- Breakfast -->
+
+        <div id="Breakfast" class="item_category">
+        <div class="menu_item_header">
+            <button class="btn_md_sides">Sides</button>
+        </div>
+        <h3 class="menu_item_notes">*Breakfast is served all day</h3>
+
+
+        <a href="menu_item.html"><div class="card_xl">
+            <div class="card_xl_title"><h5>Grey Dog's Breakfast</h5></div>
+            <div class="card_xl_price">$18.50</div>
+            <div class="card_xl_description">Eggs any style, french toast or pancakes, home fries & bacon, sausage or avocado</div>
+        </div>
+        </a>
+        <div class="card_xl">
+            <div class="card_xl_title"><h5>Village Pancakes</h5></div>
+            <div class="card_xl_price">$18.50</div>
+            <div class="card_xl_description">With vermont maple syrup & butter<br>Add blueberries, strawberries, bananas, or chocolate chips<br>*Gluten free option</div>
+        </div>
+        <div class="card_xl">
+            <div class="card_xl_title"><h5>French Toast</h5></div>
+            <div class="card_xl_price">$18.00</div>
+            <div class="card_xl_description">With raspberry orange syrup, maple butter, fresh mint & berries</div>
+        </div>
+        <div class="card_xl">
+            <div class="card_xl_title"><h5>Breakfast Bowl</h5></div>
+            <div class="card_xl_price">$18.00</div>
+            <div class="card_xl_description">With poached egg, white bean hummus, avocado, sweet potato, broccoli, mushrooms, aleppo zucchini salad, & toast points</div>
+        </div>
+
+        <div class="card_xl">
+            <div class="card_xl_title"><h5>Fried Chicken & Waffles</h5></div>
+            <div class="card_xl_price">$17.00</div>
+            <div class="card_xl_description">With maple butter & chili spiced syrup</div>
+        </div>
+        <div class="card_xl">
+            <div class="card_xl_title"><h5>Classic Omlette</h5></div>
+            <div class="card_xl_price">$17.00</div>
+            <div class="card_xl_description">Choice of 3 fillings<br>Served with home fries & toast</div>
+        </div>
+        <div class="card_xl">
+            <div class="card_xl_title"><h5>Avacado Toast</h5></div>
+            <div class="card_xl_price">$18.00</div>
+            <div class="card_xl_description">On seven grain with poached eggs, chili flakes, parsley, & home fries</div>
+        </div>
+        <div class="card_xl">
+            <div class="card_xl_title"><h5>Eggs & Cheese Croissant</h5></div>
+            <div class="card_xl_price">$17.00</div>
+            <div class="card_xl_description">Scrambled eggs & white cheddar on a croissant with home fries</div>
+        </div>
+        <div class="card_xl">
+            <div class="card_xl_title"><h5>Vegan Breakfast Burrito</h5></div>
+            <div class="card_xl_price">$18.50</div>
+            <div class="card_xl_description">Zero egg, refried beans, avocado, pico de gallo, chipotle mayo served with home fries</div>
+        </div>
+        </div> <!-- End of Breakfast -->
+
+        <!-- Shares -->
+
+        <div id="Shares" class="item_category" style="display:none">
+            <div class="card_xl">
+                <div class="card_xl_title"><h5>Sticky Nuggs</h5></div>
+                <div class="card_xl_price">$12.00</div>
+                <div class="card_xl_description">Crispy fried chicken nuggets in sticky sauce with cilantro<br>*Vegan option</div>
+            </div>
+            <div class="card_xl">
+                <div class="card_xl_title"><h5>Nachos</h5></div>
+                <div class="card_xl_price">$15.50</div>
+                <div class="card_xl_description">Black bean, pickled onion, jalapeno, pico, cilantro, cheddar, & mozz</div>
+            </div>
+            <div class="card_xl">
+                <div class="card_xl_title"><h5>Fried Artichokess</h5></div>
+                <div class="card_xl_price">$12.00</div>
+                <div class="card_xl_description">With lemon, parsley, and old bay aioli</div>
+            </div>
+            <div class="card_xl">
+                <div class="card_xl_title"><h5>Grilled Cheese Dippers</h5></div>
+                <div class="card_xl_price">$16.00</div>
+                <div class="card_xl_description">With tomato soup</div>
+            </div>
+            <div class="card_xl">
+                <div class="card_xl_title"><h5>Fried Brussel Sprouts</h5></div>
+                <div class="card_xl_price">$11.50</div>
+                <div class="card_xl_description">With lemon, parsley, and old bay aioli</div>
+            </div>
+            <div class="card_xl">
+                <div class="card_xl_title"><h5>Crispy Tofu Bites</h5></div>
+                <div class="card_xl_price">$11.00</div>
+                <div class="card_xl_description">Served with sweet & sour dipping sauce & golden raisin dipping sauce</div>
+            </div>
+            <div class="card_xl">
+                <div class="card_xl_title"><h5>Chicken Wings</h5></div>
+                <div class="card_xl_price">$18.00</div>
+                <div class="card_xl_description">With lemon, parsley, and old bay aioli</div>
+            </div>
+            <div class="card_xl">
+                <div class="card_xl_title"><h5>Vegan Popcorn Chicken & Sweet Potato Beignets</h5></div>
+                <div class="card_xl_price">$13.00</div>
+                <div class="card_xl_description">With green goddess dip</div>
+            </div>
+            <div class="card_xl">
+                <div class="card_xl_title"><h5>Tomato & Mozzarella Flatbread</h5></div>
+                <div class="card_xl_price">$11.50</div>
+                <div class="card_xl_description">after 3pm</div>
+            </div>
+            <div class="card_xl">
+                <div class="card_xl_title"><h5>French Fries</h5></div>
+                <div class="card_xl_price">$7.00</div>
+            </div>
+            <div class="card_xl">
+                <div class="card_xl_title"><h5>Sweet Potato Fries</h5></div>
+                <div class="card_xl_price">$7.00</div>
+            </div>
+        </div> <!-- End of Shares -->
+
+        <!-- Lunch & Dinner -->
+
+        <div id="LunchAndDinner" class="item_category" style="display:none">
+            <div class="menu_item_header">
+                <button class="btn_md_sides">Sandwiches</button>
+                <button class="btn_md_sides">Salads & Bowls</button>
+                <button class="btn_md_sides">Soup</button>
+            </div>
+            <h3 class="menu_item_notes">Served with fries or greens<br>Sub sweet potato fries $1.00<br>Make your side a soup $5.00</h3>
+            <div class="card_xl">
+                <div class="card_xl_title"><h5>House Burger</h5></div>
+                <div class="card_xl_price">$16.00</div>
+                <div class="card_xl_description">Double patties with lettuce, tomato, caramelized onion, pickles, & mayo</div>
+            </div>
+            <div class="card_xl">
+                <div class="card_xl_title"><h5> Impossible Burger</h5></div>
+                <div class="card_xl_price">$17.00</div>
+                <div class="card_xl_description">Double patties with lettuce, tomato, caramelized onion, pickles, & mayo</div>
+            </div>
+            <div class="card_xl">
+                <div class="card_xl_title"><h5>Homemade Veggie Burger</h5></div>
+                <div class="card_xl_price">$16.50</div>
+                <div class="card_xl_description">Fresh veggies rolled in quinoa, fried crispy, with lettuce, alfalfa sprouts, pickled onions, onions, tomato, & green goddess</div>
+            </div>
+            <div class="card_xl">
+                <div class="card_xl_title"><h5>B.L.A.T.</h5></div>
+                <div class="card_xl_price">$16.50</div>
+                <div class="card_xl_description">Thick bacon, avocado, greens, tomato, & piquillo mayo on challah toast</div>
+            </div>
+            <div class="card_xl">
+                <div class="card_xl_title"><h5>Philly Cheesesteak Wrap</h5></div>
+                <div class="card_xl_price">$16.50</div>
+                <div class="card_xl_description">With sautéed peppers & onions</div>
+            </div>
+            <div class="card_xl">
+                <div class="card_xl_title"><h5>Grey Dog Club</h5></div>
+                <div class="card_xl_price">$17.50</div>
+                <div class="card_xl_description">On toasted seven grain with roasted chicken, thick cut bacon, cheddar, tomato, greens, honey mustard, & herb mayo</div>
+            </div>
+            <div class="card_xl">
+                <div class="card_xl_title"><h5>Vegan Buffalo Fried Chicken</h5></div>
+                <div class="card_xl_price">$17.00</div>
+                <div class="card_xl_description">On 7 grain with cabbage slaw & tarragon sauce</div>
+            </div>
+            <div class="card_xl">
+                <div class="card_xl_title"><h5>Pulled Short Rib & Crispy Onions</h5></div>
+                <div class="card_xl_price">$17.50</div>
+                <div class="card_xl_description">On ciabatta with green goddess dressing, mushrooms, & beef au jus</div>
+            </div>
+            <div class="card_xl">
+                <div class="card_xl_title"><h5>Grilled Cheese</h5></div>
+                <div class="card_xl_price">$15.00</div>
+                <div class="card_xl_description">On challah with cheddar & mozzarella</div>
+            </div>
+            <div class="card_xl">
+                <div class="card_xl_title"><h5>Baja Fish Tacos</h5></div>
+                <div class="card_xl_price">$17.00</div>
+                <div class="card_xl_description">Beer battered cod in corn tortillas with cauliflower slaw, chipotle mayo, fresh cilantro, & lime</div>
+            </div>
+        </div> <!-- End of Lunch & Dinner -->
+    
+        <!-- Beverages -->
+
+        <div id="Beverages" class="item_category" style="display:none">
+            <div class="menu_item_header">
+                <button class="btn_md_sides">Hot</button>
+                <button class="btn_md_sides">Cold</button>
+                <button class="btn_md_sides">Draft Beer</button>
+                <button class="btn_md_sides">Wines & Bubbles</button>
+                <button class="btn_md_sides">Cocktails</button>
+                <button class="btn_md_sides">Mules</button>
+            </div>
+            <h3 class="menu_item_notes">Happy Hour<br>Mon-Fri (3pm til 7pm)<br>Sat & Sun (4pm til 7pm)</h3>
+
+            <div class="card_xl">
+                <div class="card_xl_title"><h5>Bottomless Coffee</h5></div>
+                <div class="card_xl_price">$4.50</div>
+            </div>
+            <div class="card_xl">
+                <div class="card_xl_title"><h5>Americano</h5></div>
+                <div class="card_xl_price">$4.50</div>
+            </div>
+            <div class="card_xl">
+                <div class="card_xl_title"><h5>Decaf Americano <i>*not bottomless</i></h5></div>
+                <div class="card_xl_price">$4.50</div>
+            </div>
+            <div class="card_xl">
+                <div class="card_xl_title"><h5>Espresso</h5></div>
+                <div class="card_xl_price">$4.50</div>
+            </div>
+            <div class="card_xl">
+                <div class="card_xl_title"><h5>Cortado</h5></div>
+                <div class="card_xl_price">$5.00</div>
+            </div>
+            <div class="card_xl">
+                <div class="card_xl_title"><h5>Cappucino</h5></div>
+                <div class="card_xl_price">$5.75</div>
+            </div>
+            <div class="card_xl">
+                <div class="card_xl_title"><h5>Latte</h5></div>
+                <div class="card_xl_price">$5.75</div>
+            </div>
+            <div class="card_xl">
+                <div class="card_xl_title"><h5>Matcha Latte</h5></div>
+                <div class="card_xl_price">$5.75</div>
+            </div>
+            <div class="card_xl">
+                <div class="card_xl_title"><h5>Chai Latte <i>*with oak milk</i></h5></div>
+                <div class="card_xl_price">$6.25</div>
+            </div>
+            <div class="card_xl">
+                <div class="card_xl_title"><h5>Hot Chocolate <i>*with whipped cream</i></h5></div>
+                <div class="card_xl_price">$5.50</div>
+            </div>
+            <div class="card_xl">
+                <div class="card_xl_title"><h5>Hot Cider <i>*seasonal</i></h5></div>
+                <div class="card_xl_price">$6.00</div>
+            </div>
+            <div class="card_xl">
+                <div class="card_xl_title"><h5>Bushwick Tea</h5></div>
+                <div class="card_xl_price">$5.00</div>
+            </div>
+        </div> <!-- End of Beverages -->
+
+    </div> <!-- End of Container - Menu -->
+
+
+      <!-- Footer Nav -->
+
+      <div class="container_footer">
+        <div id="btn_footer_home">
+        <button class="btn_footer_nav" onclick="location.href='home.html';"><img src="images/icon_nav_home_default.svg" alt="Navigation Button - Home"><p>Home</p></button>
+        </div>
+        <div id="btn_footer_qrscan">
+        <button class="btn_footer_nav" onclick="location.href='qrscan.html';"><img src="images/icon_nav_qrcode_default.svg" alt="Navigation Button - QR Scan"><p>QR Scan</p></button>
+        </div>
+        <div id="btn_footer_myorder">
+        <button class="btn_footer_nav" onclick="location.href='no_orders.html';"><img src="images/icon_nav_myorder_default.svg" alt="Navigation Button - My Order"><p>My Order</p></button>
+        </div>
+        <div id="btn_footer_profile">
+        <button class="btn_footer_nav" onclick="location.href='profile.html';"><img src="images/icon_nav_profile_default.svg" alt="Navigation Button - User Profile"><p>Profile</p></button>
+        </div>
+        </div> <!-- End of Footer -->
+
+    </div> <!-- End of parent -->
+    
+<script>
+    // Add link to Container-Menu
+    document.getElementById('container_menu').addEventListener('click', function() {
+    location.href = 'menu_item.html'
+    }, false);
+</script>
+
+<script>
+    // Add active class to the current tab
+    var header = document.getElementById("container_tabbed_nav");
+    var btns = header.getElementsByClassName("tab_lg");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("tab_lg_selected");
+      current[0].className = current[0].className.replace("tab_lg_selected", "");
+      this.className += " tab_lg_selected";
+      });
+    }
+</script>
+
+</body>
+</html>

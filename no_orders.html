@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>No Orders</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,400;1,500&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="script.js"></script> 
+    </head>
+    <body class="bg_gradient">
+
+        <!-- Container - Header -->
+
+      <div>
+
+        <div class="container_header_scrolls">
+            <div class="btn_back hide"><img src="images/btn_back_arrow_default.svg" alt="Button - Back" onclick="history.back()"></div>
+            <div class="header_logo" onclick="location.href='home.html';"><img src="images/btn_feastly_logo.png" alt="Button - Home"></div>
+            <div class="btn_bell hide"><img src="images/btn_bell_orange.svg" alt="Button - Alert Server"/></div>
+        </div>
+
+    <!-- Splash -->
+
+        <div id="container_no_orders" class="col_8">
+            <img class="img_no_orders" src="images/img_no_orders.svg" alt="Image of egg on plate with spoon and knife">
+            <h1> No Orders Yet</h1>
+            <h4>Your cart is empty.<br>Add something from the menu</h4>
+            <br>
+            <button class="btn_login" onclick="history.back()">Go Back</button>
+        </div>
+
+    <!-- Footer Nav -->
+
+    <div class="container_footer">
+        <div id="btn_footer_home">
+        <button class="btn_footer_nav" onclick="location.href='home.html';"><img src="images/icon_nav_home_default.svg" alt="Navigation Button - Home"><p>Home</p></button>
+        </div>
+        <div id="btn_footer_qrscan">
+        <button class="btn_footer_nav" onclick="location.href='qrscan_instructions.html';"><img src="images/icon_nav_qrcode_default.svg" alt="Navigation Button - QR Scan"><p>QR Scan</p></button>
+        </div>
+        <div id="btn_footer_myorder">
+        <button class="btn_footer_nav"><img src="images/icon_nav_myorder_default.svg" alt="Navigation Button - My Order"><p>My Order</p></button>
+        </div>
+        <div id="btn_footer_profile">
+        <button class="btn_footer_nav" onclick="location.href='profile.html';"><img src="images/icon_nav_profile_default.svg" alt="Navigation Button - User Profile"><p>Profile</p></button>
+        </div>
+    </div> <!-- End of Footer -->
+
+</div> <!-- End of parent -->
+</body>
+</html>

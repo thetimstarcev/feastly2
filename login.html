@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Log In</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,400;1,500&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="script.js"></script> 
+    </head>
+    <body class="bg_gradient">
+
+        <div class="parent">
+
+        <!-- Logo -->
+
+        <div class="col_10 animation_fadein">
+        <img class="img_login_logo" src="images/img_logo_feastly3d.png" alt="Feastly Spaghetti & Meatballs 3D Logo">
+        <h1 class="primary"> Dine your way.</h1>
+        <h1>Log In</h1>
+        </div>
+
+    <!-- Container - Log In -->
+
+    <div class="col_10 animation_fadein">
+        <div class="container_login align_center">
+            <input type="text" id="femail_filled" name="femail" value="Sarah.Gray@email.com">
+            <input type="password" id="fpassword_filled" name="fpassword" value="************">
+            <h5 class="font_link align_right">Forgot Password?</h5>
+            <button class="btn_login" onclick="location.href='home.html';">Log In</button>
+            <p class="font_body">or log in with</p>
+            <div class="container_login_buttons">
+            <button class="btn_xs">
+                <img src="images/btn_google.svg">
+            </button>
+            <button class="btn_xs">
+                <img src="images/btn_facebook.svg">
+            </button>
+            </div>
+            <p class="font_body">Don't have an account? <span class="font_link">Sign Up</span></p>
+        </div>
+    </div>
+
+    </div> <!-- End of parent -->
+</body>
+</html>

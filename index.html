@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Welcome to Feastly!</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,400;1,500&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="script.js"></script>
+
+        <!-- Redirects to Login Screen after video -->
+
+        <script>
+            function videoEnded() {
+                location.href="login.html";
+                }
+        </script>
+
+    </head>
+    <body>
+      <div class="parent vh_full bg_secondary">
+
+    <!-- Video -->
+
+    <div id="container_splash_video" class="col_10">
+          <video id="video_splash" playsinline autoplay muted onended="videoEnded()">
+            <source src="videos/feastly_logo.mp4" type="video/mp4">
+          </video>
+    </div>
+    </div> <!-- End of parent -->
+</body>
+</html>

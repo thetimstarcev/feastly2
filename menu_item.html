@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Menu Item</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,400;1,500&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+
+      <body>
+      <div class="parent">
+
+        <div class="container_header">
+            <div class="btn_back"><img src="images/btn_back_arrow_default.svg" alt="Button - Back" onclick="history.back()"></div>
+            <div class="header_logo" onclick="location.href='home.html';"><img src="images/btn_feastly_logo.png" alt="Button - Home"></div>
+            <div class="btn_bell"><img src="images/btn_bell_orange.svg" alt="Button - Alert Server"/></div>
+        </div>
+
+        <div id="container_subheader_splash" class="col_10">
+            <img class="subheader_splash_image" src="images/photo_splash_breakfast.png" alt="Picture of Grey Dog's Breakfast"/>
+        </div>
+
+        <div id="container_menu_item" class="col_10">
+           <h4>Gray Dog's Breakfast</h4>
+           <p class="font_body">Eggs any style, french toast or pancakes, home fries, & bacon, sausage or avocado</p>
+        </div>
+
+        <div class="col_10">
+            <hr class="divider_horizontal">
+            <br>
+        </div>
+
+        <!-- Container - Menu Item Options -->
+
+        <div class="col_8_left">
+            <div id="container_item_options" class="col_8_left">
+                <h4 class="inline">Eggs</h4><br>
+                <span class="font_body">How would you like them? *choose one</span><br>
+                <div class="select-wrapper">
+                    <select>
+                    <option>scrambled eggs</option>
+                    <option>over easy</option>
+                    <option>over medium</option>
+                    <option>over hard</option>
+                    </select>
+                </div>
+                <br>
+                <h4 class="inline">French Toast or Pancakes</h4><br>
+                <span class="font_body">*choose one</span><br>
+                <div class="select-wrapper">
+                    <select>
+                    <option>french toast</option>
+                    <option>pancakes</option>
+                    </select>
+                </div>
+                <br>
+                <h4 class="inline">Side</h4><br>
+                <span class="font_body">*choose one</span><br>
+                <div class="select-wrapper">
+                    <select>
+                    <option>bacon</option>
+                    <option>sausage</option>
+                    <option>avocado</option>
+                    </select>
+                </div>
+                    <form id='myform' method='POST' class='quantity' action='#'>
+                        <button type="button" class='qtyminus minus' field='quantity'>
+                            <img class="btn_quantity" src="images/btn_minus.svg" alt="Press here to reduce order quantity"/>
+                          </button>
+                        <input type='text' name='quantity' value='1' class='qty' />
+                        <!-- <input type='button' value='+' class='qtyplus plus' field='quantity'/> -->
+                        <button type="button" class='qtyplus plus' field='quantity'>
+                            <img class="btn_quantity" src="images/btn_plus.svg" alt="Press here to increase order quantity"/>
+                          </button>
+                      </form> 
+            </div> <!-- End of Container - Options -->
+            <br>
+
+            <div class="col_10">
+            <button class="btn_xxl" onclick="location.href='myorder.html';">Add 1 to Cart - $18.50</button>
+            </div>
+        </div> <!-- End of Container - Menu Item Options -->
+
+     <!-- Footer Nav -->
+
+     <div class="container_footer">
+        <div id="btn_footer_home">
+        <button class="btn_footer_nav" onclick="location.href='home.html';"><img src="images/icon_nav_home_default.svg" alt="Navigation Button - Home"><p>Home</p></button>
+        </div>
+        <div id="btn_footer_qrscan">
+        <button class="btn_footer_nav" onclick="location.href='qrscan.html';"><img src="images/icon_nav_qrcode_default.svg" alt="Navigation Button - QR Scan"><p>QR Scan</p></button>
+        </div>
+        <div id="btn_footer_myorder">
+        <button class="btn_footer_nav"><img src="images/icon_nav_myorder_active.svg" alt="Navigation Button - My Order"><p class="primary bold">My Order</p></button>
+        </div>
+        <div id="btn_footer_profile">
+        <button class="btn_footer_nav" onclick="location.href='profile.html';"><img src="images/icon_nav_profile_default.svg" alt="Navigation Button - User Profile"><p>Profile</p></button>
+        </div>
+    </div> <!-- End of Footer -->
+
+</div> <!-- End of Parent -->
+</body>
+</html>

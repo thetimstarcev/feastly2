@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Order Summary</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,400;1,500&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+      <body>
+
+      <div class="parent">
+
+        <div class="container_header">
+            <div class="btn_back"><img src="images/btn_back_arrow_default.svg" alt="Button - Back" onclick="history.back()"></div>
+            <div class="header_logo" onclick="location.href='home.html';"><img src="images/btn_feastly_logo.png" alt="Button - Home"></div>
+            <div class="btn_bell"><img src="images/btn_bell_orange.svg" alt="Button - Alert Server"/></div>
+        </div>
+
+        <div id="container_subheader_title" class="col_10">
+            <h1>Order Summary</h1>
+            <div id="container_logo_tgd_circle">
+                <img src="images/img_logo_thegreydog_circle.png" alt="The Grey Dog logo and typeface"/><h2>The Grey Dog</h2><h4>Table #12</h4>
+            </div>
+        </div>
+
+        <div class="container_myorder_receipt">
+            <div class="myorder_title">
+                <h4>Order:</h4>
+            </div>
+            <div class="myorder_item">
+                <h5>Grey Dog's Breakfast</h5>
+            </div>
+            <div class="myorder_price">
+                <p class="font_body">$18.50</p>
+            </div>
+            <div class="myorder_list">
+                <p class="font_body">scrambled eggs<br>french toast<br>sausage</p>
+            </div>
+            <div class="myorder_btn">
+                <button><img src="images/btn_myorder.svg" alt="Press here to reduce or increase order quantity"></button>
+            </div>
+          </div>
+          
+        <div class="col_10">
+            <br>
+            <button class="btn_md" onclick="location.href='menu.html';">Add more items</button>
+            <hr class="divider_horizontal">
+        </div>
+
+        <div class="container_tip">
+            <div class="tip_title">
+                <h4>Leave a Tip</h4>
+            </div>
+            <div id="tip_buttons" class="tip_buttons">
+                <button class="btn_tip btn_tip_selected">
+                    <p>10%<br>$1.85</p>
+                </button>
+                <button class="btn_tip">
+                    <p>15%<br>$2.75</p>
+                </button>
+                <button class="btn_tip">
+                    <p>20%<br>$3.50</p>
+                </button>
+                <button class="btn_tip">
+                    <p>30%<br>$5.55</p>
+                </button>
+            </div>
+            <div class="tip_subtotal_title">
+                <p class="font_body">Subtotal</p>
+            </div>
+            <div class="tip_subtotal">
+                <p class="font_body">$18.50</p>
+            </div>
+            <div class="tip_subtotal_taxes_title">
+                <p class="font_body">Taxes</p>
+            </div>
+            <div class="tip_subtotal_taxes">
+                <p class="font_body">$3.32</p>
+            </div>
+        </div>
+
+        <div class="col_10">
+            <hr class="divider_horizontal">
+        </div>
+
+        <div class="container_total">
+            <div class="tip_amount_title">
+                <p class="font_body">Tip</p>
+            </div>
+            <div class="tip_amount">
+                <p class="font_body">$3.50</p>
+            </div>
+            <div class="total_title">
+                <h6>Total</h6>
+            </div>
+            <div class="total_amount">
+                <h6>$25.32</h6>
+            </div>
+        </div>
+    
+        <!-- Modal -->
+
+        <div id="modal_confirm_payment" class="modal">
+
+            <div class="modal_content_confirmation">
+                <div class="container_modal_confirmation"><p class="font_body modal_body">Are you sure you would like to confirm this payment?<br></p><br><button class="btn_login" onclick="location.href='confirmation.html';">Confirm</button>
+                  <button class="btn_login btn_cancel" onclick="location.href='order_summary.html';">Cancel</button></div>
+            </div>
+        
+        </div> <!-- End of Modal-->
+
+     <!-- Footer Nav -->
+
+     <div class="container_footer">
+        <div id="btn_footer_home">
+        <button class="btn_footer_nav" onclick="location.href='home.html';"><img src="images/icon_nav_home_default.svg" alt="Navigation Button - Home"><p>Home</p></button>
+        </div>
+        <div id="btn_footer_qrscan">
+        <button class="btn_footer_nav" onclick="location.href='qrscan.html';"><img src="images/icon_nav_qrcode_default.svg" alt="Navigation Button - QR Scan"><p>QR Scan</p></button>
+        </div>
+        <div id="btn_footer_myorder">
+        <button class="btn_footer_nav icon_myorder_quantity"><img src="images/icon_nav_myorder_active.svg" alt="Navigation Button - My Order"><p class="primary bold">My Order</p></button>
+        </div>
+        <div id="btn_footer_profile">
+        <button class="btn_footer_nav" onclick="location.href='profile.html';"><img src="images/icon_nav_profile_default.svg" alt="Navigation Button - User Profile"><p>Profile</p></button>
+        </div>
+    </div> <!-- End of Footer -->
+
+</div> <!-- End of Parent -->
+
+<!-- Container - Payment Method -->
+
+<div id="container_payment_method" class="col_10_left">
+    <h4>Payment Method</h4>
+    <button class="card_payment_xl card_payment_xl_selected"><img src="images/img_payment_method_visa.svg" alt="Press here to select Visa"><p class="font_body">Ending in 1234</p></button>
+    <button class="card_payment_xl"><img src="images/img_payment_method_applepay.png" alt="Press here to select Visa"><p class="font_body">Apple Pay</p></button>
+    <button class="card_payment_xl"><img src="images/img_payment_method_cash.svg" alt="Press here to select Visa"><p class="font_body">Cash</p></button>
+    <button class="btn_lg btn_secondary">+ Add payment method</button>
+    <button id="btn_confirm_payment" class="btn_xxl">Place Order - Total $25.32</button>
+    <button class="btn_xxl btn_cancel" onclick="location.href='home.html';">Cancel</button>
+</div> <!-- End of Payment Method -->
+
+ <script>
+    // Modal - Payment Confirmation
+    var modal = document.getElementById("modal_confirm_payment");
+    
+    // Get the button that opens the modal
+    var btn = document.getElementById("btn_confirm_payment");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+</script>
+
+<script>
+    // Add active class to the current button
+    var header = document.getElementById("tip_buttons");
+    var btns = header.getElementsByClassName("btn_tip");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("btn_tip_selected");
+      current[0].className = current[0].className.replace("btn_tip_selected", "");
+      this.className += " btn_tip_selected";
+      });
+    }
+</script>
+
+<script>
+    // Add active class to the current payment method
+    var header = document.getElementById("container_payment_method");
+    var btns = header.getElementsByClassName("card_payment_xl");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("card_payment_xl_selected");
+      current[0].className = current[0].className.replace("card_payment_xl_selected", "");
+      this.className += " card_payment_xl_selected";
+      });
+    }
+</script>
+
+</body>
+</html>
